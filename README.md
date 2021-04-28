@@ -23,12 +23,12 @@ This will server as a portable certificate authority for https clients and serve
 ## Server
 - It is very important that you provide the hostname or IP address value of your server node with Common Name or else the server client TCP handshake will fail if the hostname does not matches the CN of the server certificate. 
 - [Great Tutorial](https://www.golinuxcloud.com/openssl-create-client-server-certificate/)
-Generate a server key pair:
 
 ## Client
 - basically the same as the Server except the only subject filled in is a common name which is generated based of its number.
 
 ## Script
+- [Example Setup](https://github.com/shehio/Mutual-SSL)
 To expidite the CA, Server, adn client generation run the bash script to generate the specified number of client certs:
 
 ```shell
